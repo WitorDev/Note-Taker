@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="app.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Note Taker</title>
+</head>
+<body>
+    <header>
+        <h1>Note Taker</h1>
+        <button id="dark-mode-button"><i class="fas fa-sun"></i></button>
+        <a href="https://github.com/WitorDev/" target="blank"><i class="fas fa-link"></i></a>
+    </header>
+
+    <div class="action-menu">
+        <button class="create-button">Create</button>
+    </div>
+
+    <section class="notes-container">
+        <!--Notes go here-->
+    </section>
+
+    <div class="note-creation-screen">
+        <div class="note-creation-wrapper">
+            <div class="note-creation-header">
+                <h1>Note Creation</h1>
+                <div class="create-screen-buttons">
+                    <button id="add-note-button"><i class="fas fa-check"></i></button>
+                    <button id="leave-note-creation-button"><i class="fas fa-close"></i></button>
+                </div>
+            </div>
+
+        <div class="input-box">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="note-title" placeholder="Insert Note Title" value="" maxlength="30">
+                <label for="text">Text</label>
+                <textarea name="text" id="note-paragraph" placeholder="Insert Note Text" rows="13"></textarea>
+        </div>
+        <div class="note-creation-preview">
+            <div class="note-creation-preview-title">
+                <h1>Preview:</h1>
+                <button id="reload-preview"><i class="fas fa-rotate-right fa-2x"></i></button>
+            </div>
+            <!--Preview Note-->
+            <div class="note" id="preview-note">
+                <div class="note-title-container">
+                    <h1 id="preview-title"></h1>
+                    <button id="delete-note-button"><i class="fas fa-close"></i></button>
+                </div>
+                <p id="preview-paragraph"></p>
+            </div>
+
+        </div>
+        </div>
+    </div>
+</body>
+</html>
